@@ -9,3 +9,8 @@ The planner is based on the A* algorithm and a heuristic has been designed for t
 
 HEURISTIC GOALS: 
 The heuristic was designed with pruning in mind to guide the search process in order to make it explore fewer states, and in turn make the algorithm run faster. The heuristic was created by analyzing the characteristics of the problem in order to find subproblems that are not worth exploring during the search. For example, in the Minecraft crafting problem there’s no reason to ever craft a tool (pickaxe, furnace, etc. -- things appearing in 'Requires' conditions) if you already have one of them. State-space planners often waste their time considering every possible ordering of order-insensitive actions.
+
+RUNNING THE PROJECT:
+In order to run and test the planner, you need to execute the following command (assuming you are in the /src folder):
+
+$ python3.5 craft_planner.py
